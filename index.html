@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Necros Games</title>
+<meta name="description" content="Necros Games — indie game studio.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+<style>
+  :root {
+    --plum: #592D60;
+    --stone: #7E7F7A;
+    --bg-top: #faf8fb;
+    --bg-bottom: #f1ecf4;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body { height: 100%; }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    overflow: hidden;
+    padding: 1.5rem;
+  }
+
+  .logo {
+    width: min(560px, 86vw);
+    height: auto;
+    pointer-events: none; /* tıklamalar sayfada kalsın */
+  }
+
+  /* --- Buton --- */
+  .contact {
+    opacity: 0;
+    transform: translateY(12px);
+    animation: rise 0.7s ease 2.7s forwards;
+    display: inline-block;
+    padding: 0.9rem 2.4rem;
+    border-radius: 999px;
+    background: var(--plum);
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    box-shadow: 0 6px 20px rgba(89, 45, 96, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  }
+
+  .contact:hover {
+    transform: translateY(-2px);
+    background: #6b3a73;
+    box-shadow: 0 10px 26px rgba(89, 45, 96, 0.35);
+  }
+
+  .contact:focus-visible {
+    outline: 3px solid var(--plum);
+    outline-offset: 3px;
+  }
+
+  @keyframes rise {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  footer {
+    position: fixed;
+    bottom: 1.2rem;
+    font-size: 0.8rem;
+    color: var(--stone);
+    opacity: 0;
+    animation: rise 0.7s ease 3s forwards;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .contact, footer { animation: none; opacity: 1; transform: none; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- Logo harici dosyadan yükleniyor; animasyon SVG'nin kendi içinde -->
+  <object class="logo" type="image/svg+xml" data="assets/logo.svg" aria-label="Necros Games">
+    <!-- object desteklenmezse yedek -->
+    <img src="assets/logo.svg" alt="Necros Games" style="width:100%">
+  </object>
+
+  <a class="contact" href="mailto:necrosgamesdev@gmail.com">Contact Us</a>
+
+  <footer>© 2026 Necros Games</footer>
+
+</body>
+</html>
