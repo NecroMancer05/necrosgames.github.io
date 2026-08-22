@@ -3,8 +3,7 @@
     path {
       fill-opacity: 0;
       stroke: #592D60;
-      stroke-width: 1.5;
-      vector-effect: non-scaling-stroke;
+      stroke-width: 10.5;      /* 1.5px / 0.142857 */
       stroke-dasharray: 1;
       stroke-dashoffset: 1;
       animation:
@@ -12,7 +11,8 @@
         fill-in 0.8s ease forwards;
     }
 
-    .games path { stroke: #7E7F7A; }
+    .n path     { stroke-width: 13.35; } /* 1.5px / 0.112360 */
+    .games path { stroke: #7E7F7A; stroke-width: 16.94; } /* 1.5px / 0.088571 */
 
     path:nth-of-type(1)  { animation-delay: 0.00s, 1.10s; }
     path:nth-of-type(2)  { animation-delay: 0.00s, 1.10s; }
@@ -42,7 +42,7 @@
 
   <!-- NECROS -->
   <g transform="translate(40.0 140.0) scale(1 -1)">
-    <g fill="#592D60" transform="scale(0.112360) translate(-35 -37)"><path pathLength="1" d="M336 926 c-24 -2 -32 -3 -41 -5 -5 -1 -13 -3 -17 -3 -12 -3 -24 -6
+    <g class="n" fill="#592D60" transform="scale(0.112360) translate(-35 -37)"><path pathLength="1" d="M336 926 c-24 -2 -32 -3 -41 -5 -5 -1 -13 -3 -17 -3 -12 -3 -24 -6
 -40 -12 -5 -2 -11 -4 -14 -5 -4 -1 -8 -3 -9 -4 -1 -1 -7 -4 -12 -7 -10 -4 -39
 -23 -50 -32 -3 -2 -9 -7 -12 -9 -16 -13 -41 -43 -52 -63 -1 -2 -3 -6 -5 -9 -2
 -3 -5 -8 -6 -11 -3 -5 -12 -23 -12 -24 0 0 -1 -4 -3 -7 -2 -4 -3 -8 -3 -8 0
