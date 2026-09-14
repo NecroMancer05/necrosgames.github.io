@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gizlilik Politikası — Necros Games</title>
+<meta name="description" content="Necros Games privacy policy for Paw Smash! - Physics Puzzle and other games.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+<style>
+  :root {
+    --plum: #592D60;
+    --plum-soft: #6b3a73;
+    --stone: #7E7F7A;
+    --ink: #2b2230;
+    --bg-top: #faf8fb;
+    --bg-bottom: #f1ecf4;
+    --card: #ffffff;
+    --line: #e6dde9;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    color: var(--ink);
+    line-height: 1.65;
+    padding: 1.5rem;
+  }
+
+  header {
+    max-width: 820px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--plum);
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .brand img { width: 44px; height: 44px; }
+
+  /* --- Dil seçici --- */
+  .lang {
+    display: inline-flex;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 3px;
+    box-shadow: 0 4px 14px rgba(89, 45, 96, 0.10);
+  }
+
+  .lang button {
+    border: 0;
+    background: transparent;
+    color: var(--plum);
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.35rem 0.95rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  .lang button[aria-pressed="true"] { background: var(--plum); color: #fff; }
+  .lang button:focus-visible { outline: 3px solid var(--plum); outline-offset: 2px; }
+
+  main {
+    max-width: 820px;
+    margin: 0 auto;
+    background: var(--card);
+    border-radius: 20px;
+    padding: clamp(1.4rem, 4vw, 3rem);
+    box-shadow: 0 10px 40px rgba(89, 45, 96, 0.10);
+  }
+
+  h1 { color: var(--plum); font-size: clamp(1.6rem, 4vw, 2.2rem); line-height: 1.2; }
+  .meta { color: var(--stone); font-size: 0.9rem; margin: 0.4rem 0 1.6rem; }
+
+  h2 {
+    color: var(--plum);
+    font-size: 1.2rem;
+    margin: 2rem 0 0.6rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--line);
+  }
+
+  h3 { font-size: 1rem; margin: 1rem 0 0.3rem; }
+  p, ul, table { margin-bottom: 0.8rem; }
+  ul { padding-left: 1.3rem; }
+  li { margin-bottom: 0.3rem; }
+  a { color: var(--plum); }
+  a:hover { color: var(--plum-soft); }
+
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.93rem; }
+  th, td { text-align: left; padding: 0.55rem 0.6rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--plum); font-weight: 600; background: #faf6fb; }
+
+  .note {
+    background: #faf6fb;
+    border-left: 4px solid var(--plum);
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--stone);
+    margin: 1.5rem 0 0.5rem;
+  }
+
+  /* Dil bölümleri: yalnız seçili olan görünür */
+  [data-lang] { display: none; }
+  html[lang="tr"] [data-lang="tr"],
+  html[lang="en"] [data-lang="en"] { display: block; }
+</style>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="index.html">
+    <img src="assets/logo.svg" alt="" onerror="this.remove()">
+    <span>Necros Games</span>
+  </a>
+  <div class="lang" role="group" aria-label="Dil / Language">
+    <button type="button" data-set-lang="tr" aria-pressed="true">Türkçe</button>
+    <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+  </div>
+</header>
+
+<main>
+
+<!-- ===================================================================== -->
+<!-- TÜRKÇE                                                                -->
+<!-- ===================================================================== -->
+<article data-lang="tr">
+  <h1>Gizlilik Politikası</h1>
+  <p class="meta">Yürürlük tarihi: 14 Eylül 2026 · Son güncelleme: 14 Eylül 2026</p>
+
+  <p>Bu Gizlilik Politikası, <strong>Necros Games</strong> (“biz”, “bizim”) tarafından geliştirilen
+  <strong>Paw Smash! - Physics Puzzle</strong> ve diğer mobil oyunlarımız (birlikte “Oyun”) ile
+  <a href="https://necrosgames.com">necrosgames.com</a> web sitesini kullandığınızda hangi bilgilerin
+  toplandığını, nasıl kullanıldığını ve bu konudaki haklarınızı açıklar. Oyunu indirerek veya
+  kullanarak bu politikayı kabul etmiş olursunuz.</p>
+
+  <p>Bu politika; 6698 sayılı Kişisel Verilerin Korunması Kanunu (<strong>KVKK</strong>), Avrupa Birliği
+  Genel Veri Koruma Tüzüğü (<strong>GDPR</strong>) ve ABD Kaliforniya Tüketici Gizliliği Yasası
+  (<strong>CCPA/CPRA</strong>) dahil geçerli veri koruma mevzuatı göz önünde bulundurularak hazırlanmıştır.</p>
+
+  <h2>1. Veri Sorumlusu</h2>
+  <p>Kişisel verilerinizin sorumlusu Necros Games'tir. Her türlü soru ve talep için:
+  <a href="mailto:necrosgamesdev@gmail.com">necrosgamesdev@gmail.com</a></p>
+
+  <h2>2. Topladığımız Bilgiler</h2>
+  <p>Oyunu oynamak için hesap oluşturmanız gerekmez. Adınızı, e-posta adresinizi, telefon numaranızı
+  veya konumunuzu (GPS) <strong>istemeyiz</strong>. Aşağıdaki bilgiler Oyun ve iş ortaklarımız
+  tarafından otomatik olarak işlenebilir:</p>
+
+  <h3>a) Cihazda saklanan oyun verileri</h3>
+  <p>Bölüm ilerlemesi, coin, can, booster, ayarlar (ses, titreşim), seçtiğiniz profil adı ve avatar
+  gibi bilgiler <strong>yalnızca cihazınızda</strong> saklanır. Oyunu silerseniz bu veriler de silinir.</p>
+
+  <h3>b) Cihaz ve kullanım bilgileri</h3>
+  <ul>
+    <li>Cihaz modeli, işletim sistemi ve sürümü, dil, ülke/bölge (IP adresinden kaba tahmin), ekran çözünürlüğü</li>
+    <li>Reklam kimliği (Android Advertising ID / Apple IDFA — iOS'ta yalnızca izin verirseniz) ve uygulamaya özgü kimlikler (ör. IDFV, Firebase/Unity yükleme kimliği)</li>
+    <li>IP adresi (ağ bağlantısı gereği)</li>
+    <li>Oyun içi olaylar: oturum başlangıcı/süresi, başlanan ve bitirilen bölümler, hamle ve booster kullanımı, izlenen reklamlar, mağaza etkileşimleri</li>
+    <li>Çökme ve performans raporları</li>
+  </ul>
+
+  <h3>c) Satın alma bilgileri</h3>
+  <p>Oyun içi satın almalar Google Play veya Apple App Store üzerinden gerçekleşir. Ödeme bilgilerinizi
+  (kart numarası vb.) <strong>biz görmeyiz ve saklamayız</strong>; yalnızca satın alma işleminin
+  başarılı olduğuna dair bir onay ve ürün bilgisi alırız.</p>
+
+  <h3>d) Bizimle iletişime geçtiğinizde</h3>
+  <p>Destek için e-posta gönderirseniz e-posta adresinizi ve mesaj içeriğini yalnızca talebinizi
+  yanıtlamak için kullanırız.</p>
+
+  <h2>3. Bilgileri Kullanma Amaçlarımız ve Hukuki Sebepler</h2>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Amaç</th><th>Hukuki sebep</th></tr>
+    <tr><td>Oyunu çalıştırmak, ilerlemenizi kaydetmek, satın alımları teslim etmek</td><td>Sözleşmenin ifası</td></tr>
+    <tr><td>Hataları ve çökmeleri gidermek, performansı iyileştirmek</td><td>Meşru menfaat</td></tr>
+    <tr><td>Analitik: oyunun nasıl oynandığını anlamak, bölüm zorluğunu dengelemek</td><td>Meşru menfaat / açık rıza (gerektiği yerde)</td></tr>
+    <tr><td>Reklam göstermek (ödüllü reklam, geçiş reklamı, banner) ve reklam performansını ölçmek</td><td>Meşru menfaat (kişiselleştirilmemiş) / açık rıza (kişiselleştirilmiş)</td></tr>
+    <tr><td>Hile ve suistimali önlemek, yasal yükümlülükleri yerine getirmek</td><td>Hukuki yükümlülük / meşru menfaat</td></tr>
+  </table>
+  </div>
+  <p>Kişisel verilerinizi <strong>satmayız</strong>.</p>
+
+  <h2>4. Reklamlar</h2>
+  <p>Oyun ücretsizdir ve reklamlarla desteklenir. Reklamlar üçüncü taraf reklam ağları tarafından
+  sunulur. Bu ağlar reklam kimliğinizi, IP adresinizi ve cihaz bilgilerinizi ilgi alanlarınıza göre
+  reklam göstermek, reklam sıklığını sınırlamak ve reklam gösterimlerini/tıklamalarını ölçmek için
+  kullanabilir.</p>
+  <p>Avrupa Ekonomik Alanı (AEA), Birleşik Krallık ve İsviçre'deki kullanıcılardan kişiselleştirilmiş
+  reklam ve ilgili veri işleme için Oyun ilk açılışta <strong>izin ister</strong>; izin vermezseniz
+  yalnızca kişiselleştirilmemiş reklamlar gösterilir. iOS'ta takip izni Apple'ın
+  <strong>App Tracking Transparency</strong> penceresiyle istenir. Seçiminizi Oyun'un Ayarlar
+  menüsünden (varsa “Gizlilik Seçenekleri”) veya cihaz ayarlarınızdan istediğiniz zaman değiştirebilirsiniz.</p>
+
+  <h2>5. Üçüncü Taraf Hizmet Sağlayıcılar</h2>
+  <p>Oyun aşağıdaki türde hizmet sağlayıcılarla çalışır. Her birinin veriyi nasıl işlediği kendi
+  gizlilik politikasında açıklanmıştır:</p>
+  <!-- NOT: Oyuna gerçekten eklenen SDK'lara göre bu tabloyu güncelleyin. -->
+  <div class="table-wrap">
+  <table>
+    <tr><th>Sağlayıcı</th><th>Amaç</th><th>Gizlilik politikası</th></tr>
+    <tr><td>Google AdMob</td><td>Reklam</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr>
+    <tr><td>Unity LevelPlay (ironSource) ve bağlı reklam ağları</td><td>Reklam aracılığı (mediation)</td><td><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">unity.com/legal</a></td></tr>
+    <tr><td>Google Analytics for Firebase / Firebase Crashlytics</td><td>Analitik, çökme raporu</td><td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></td></tr>
+    <tr><td>Unity Gaming Services (Analytics)</td><td>Analitik</td><td><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">unity.com/legal</a></td></tr>
+    <tr><td>Google Play / Apple App Store</td><td>Dağıtım, oyun içi satın alma</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google</a> · <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple</a></td></tr>
+  </table>
+  </div>
+
+  <h2>6. Yurt Dışına Aktarım</h2>
+  <p>Hizmet sağlayıcılarımızın sunucuları Türkiye dışında (ör. ABD ve AB) bulunabilir. Bu nedenle
+  verileriniz KVKK m.9 ve GDPR kapsamındaki güvencelere (ör. Standart Sözleşme Maddeleri, açık rıza)
+  dayanılarak yurt dışına aktarılabilir.</p>
+
+  <h2>7. Saklama Süresi</h2>
+  <p>Cihazdaki oyun verileri, Oyunu silene kadar cihazınızda kalır. Analitik ve reklam verileri ilgili
+  sağlayıcının saklama politikasına göre (genellikle 14 ila 26 ay) tutulur. Destek e-postaları talebiniz
+  sonuçlandıktan sonra makul bir süre içinde silinir.</p>
+
+  <h2>8. Çocukların Gizliliği</h2>
+  <p>Oyun genel kitleye yöneliktir ve <strong>13 yaşından (AEA'da ülkeye göre 16 yaşına kadar) küçük
+  çocuklara özel olarak yönelik değildir</strong>. Bu yaştaki çocuklardan bilerek kişisel veri toplamayız.
+  Bir çocuğun bize veri sağladığını düşünüyorsanız bizimle iletişime geçin; veriyi sileriz.
+  Yaş bilgisi alınması durumunda, küçük yaştaki kullanıcılara yalnızca kişiselleştirilmemiş reklam
+  gösterilir ve analitik sınırlandırılır.</p>
+
+  <h2>9. Güvenlik</h2>
+  <p>Verileri korumak için makul teknik ve idari önlemler alırız; veriler sağlayıcılara şifreli
+  bağlantı (HTTPS/TLS) üzerinden iletilir. Ancak hiçbir internet aktarımı %100 güvenli değildir.</p>
+
+  <h2>10. Haklarınız</h2>
+  <p>KVKK m.11 ve GDPR kapsamında şu haklara sahipsiniz:</p>
+  <ul>
+    <li>Verilerinizin işlenip işlenmediğini öğrenme ve bilgi talep etme</li>
+    <li>Verilerinize erişme, düzeltilmesini veya silinmesini isteme</li>
+    <li>İşlemeye itiraz etme veya işlemeyi kısıtlama</li>
+    <li>Verilerin taşınabilirliğini talep etme</li>
+    <li>Verdiğiniz rızayı istediğiniz zaman geri alma</li>
+    <li>Kişisel Verileri Koruma Kurulu'na veya bulunduğunuz ülkedeki veri koruma otoritesine şikâyette bulunma</li>
+  </ul>
+  <p>Kaliforniya sakinleri (CCPA/CPRA) kişisel verilerinin “satılmaması / paylaşılmaması” talebinde
+  bulunabilir. Talepleriniz için <a href="mailto:necrosgamesdev@gmail.com">necrosgamesdev@gmail.com</a>
+  adresine yazın; talebinize en geç 30 gün içinde yanıt veririz. Cihazınızdaki reklam kimliğini
+  sıfırlamak ya da kişiselleştirilmiş reklamları kapatmak için:</p>
+  <ul>
+    <li><strong>Android:</strong> Ayarlar → Google → Reklamlar → “Reklam kimliğini sil”</li>
+    <li><strong>iOS:</strong> Ayarlar → Gizlilik ve Güvenlik → Takip → uygulamanın iznini kapatın</li>
+  </ul>
+
+  <h2>11. Değişiklikler</h2>
+  <p>Bu politikayı zaman zaman güncelleyebiliriz. Güncel sürüm her zaman bu sayfada yayınlanır ve
+  sayfanın başındaki tarih değiştirilir. Önemli değişikliklerde Oyun içinde bilgilendirme yapabiliriz.</p>
+
+  <h2>12. İletişim</h2>
+  <p class="note"><strong>Necros Games</strong><br>
+  E-posta: <a href="mailto:necrosgamesdev@gmail.com">necrosgamesdev@gmail.com</a><br>
+  Web: <a href="https://necrosgames.com">necrosgames.com</a></p>
+</article>
+
+<!-- ===================================================================== -->
+<!-- ENGLISH                                                               -->
+<!-- ===================================================================== -->
+<article data-lang="en">
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective date: September 14, 2026 · Last updated: September 14, 2026</p>
+
+  <p>This Privacy Policy explains what information is collected, how it is used and what rights you have
+  when you use <strong>Paw Smash! - Physics Puzzle</strong> and other mobile games developed by
+  <strong>Necros Games</strong> (“we”, “us”, “our”) (together, the “Game”), as well as the
+  <a href="https://necrosgames.com">necrosgames.com</a> website. By downloading or using the Game,
+  you agree to this policy.</p>
+
+  <p>This policy has been prepared with applicable data protection laws in mind, including the Turkish
+  Personal Data Protection Law No. 6698 (<strong>KVKK</strong>), the EU General Data Protection Regulation
+  (<strong>GDPR</strong>) and the California Consumer Privacy Act (<strong>CCPA/CPRA</strong>).</p>
+
+  <h2>1. Data Controller</h2>
+  <p>Necros Games is the controller of your personal data. For any questions or requests:
+  <a href="mailto:necrosgamesdev@gmail.com">necrosgamesdev@gmail.com</a></p>
+
+  <h2>2. Information We Collect</h2>
+  <p>You do not need an account to play. We do <strong>not</strong> ask for your name, email address,
+  phone number or precise (GPS) location. The following information may be processed automatically
+  by the Game and our partners:</p>
+
+  <h3>a) Game data stored on your device</h3>
+  <p>Level progress, coins, lives, boosters, settings (sound, vibration), and your chosen profile name
+  and avatar are stored <strong>only on your device</strong>. Deleting the Game deletes this data.</p>
+
+  <h3>b) Device and usage information</h3>
+  <ul>
+    <li>Device model, operating system and version, language, country/region (coarsely derived from IP address), screen resolution</li>
+    <li>Advertising identifier (Android Advertising ID / Apple IDFA — on iOS only if you allow it) and app-specific identifiers (e.g. IDFV, Firebase/Unity installation ID)</li>
+    <li>IP address (required for network communication)</li>
+    <li>In-game events: session start/length, levels started and completed, move and booster usage, ads watched, store interactions</li>
+    <li>Crash and performance reports</li>
+  </ul>
+
+  <h3>c) Purchase information</h3>
+  <p>In-app purchases are processed by Google Play or the Apple App Store. We <strong>never see or store</strong>
+  your payment details (such as card numbers); we only receive a confirmation that the purchase
+  succeeded and which product was bought.</p>
+
+  <h3>d) When you contact us</h3>
+  <p>If you email us for support, we use your email address and message only to respond to your request.</p>
+
+  <h2>3. How We Use Information and Legal Bases</h2>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Purpose</th><th>Legal basis</th></tr>
+    <tr><td>Running the Game, saving your progress, delivering purchases</td><td>Performance of a contract</td></tr>
+    <tr><td>Fixing bugs and crashes, improving performance</td><td>Legitimate interest</td></tr>
+    <tr><td>Analytics: understanding how the Game is played, balancing level difficulty</td><td>Legitimate interest / consent (where required)</td></tr>
+    <tr><td>Showing ads (rewarded, interstitial, banner) and measuring ad performance</td><td>Legitimate interest (non-personalized) / consent (personalized)</td></tr>
+    <tr><td>Preventing cheating and abuse, complying with legal obligations</td><td>Legal obligation / legitimate interest</td></tr>
+  </table>
+  </div>
+  <p>We do <strong>not sell</strong> your personal data.</p>
+
+  <h2>4. Advertising</h2>
+  <p>The Game is free to play and supported by ads, which are served by third-party ad networks. These
+  networks may use your advertising ID, IP address and device information to show ads based on your
+  interests, limit how often you see an ad, and measure impressions and clicks.</p>
+  <p>For users in the European Economic Area (EEA), the United Kingdom and Switzerland, the Game
+  <strong>asks for your consent</strong> on first launch before personalized advertising and related data
+  processing; if you decline, only non-personalized ads are shown. On iOS, tracking permission is requested
+  through Apple's <strong>App Tracking Transparency</strong> prompt. You can change your choice at any time
+  from the Game's Settings menu (“Privacy Options”, where available) or your device settings.</p>
+
+  <h2>5. Third-Party Service Providers</h2>
+  <p>The Game works with the following types of service providers. Each describes how it processes data
+  in its own privacy policy:</p>
+  <!-- NOTE: Update this table to match the SDKs actually shipped in the Game. -->
+  <div class="table-wrap">
+  <table>
+    <tr><th>Provider</th><th>Purpose</th><th>Privacy policy</th></tr>
+    <tr><td>Google AdMob</td><td>Advertising</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr>
+    <tr><td>Unity LevelPlay (ironSource) and connected ad networks</td><td>Ad mediation</td><td><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">unity.com/legal</a></td></tr>
+    <tr><td>Google Analytics for Firebase / Firebase Crashlytics</td><td>Analytics, crash reporting</td><td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></td></tr>
+    <tr><td>Unity Gaming Services (Analytics)</td><td>Analytics</td><td><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">unity.com/legal</a></td></tr>
+    <tr><td>Google Play / Apple App Store</td><td>Distribution, in-app purchases</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google</a> · <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple</a></td></tr>
+  </table>
+  </div>
+
+  <h2>6. International Transfers</h2>
+  <p>Our service providers' servers may be located outside your country (e.g. in the USA and the EU).
+  Your data may therefore be transferred abroad on the basis of safeguards provided under KVKK Article 9
+  and the GDPR (such as Standard Contractual Clauses or your explicit consent).</p>
+
+  <h2>7. Data Retention</h2>
+  <p>Game data on your device remains there until you delete the Game. Analytics and advertising data are
+  kept according to each provider's retention policy (typically 14 to 26 months). Support emails are deleted
+  within a reasonable period after your request is resolved.</p>
+
+  <h2>8. Children's Privacy</h2>
+  <p>The Game is intended for a general audience and is <strong>not directed at children under 13
+  (or under the age of digital consent in your EEA country, up to 16)</strong>. We do not knowingly collect
+  personal data from children of that age. If you believe a child has provided us with data, contact us and
+  we will delete it. Where age information is collected, younger users are shown only non-personalized ads
+  and analytics is limited.</p>
+
+  <h2>9. Security</h2>
+  <p>We take reasonable technical and organizational measures to protect data; data is sent to providers over
+  encrypted connections (HTTPS/TLS). However, no method of transmission over the internet is 100% secure.</p>
+
+  <h2>10. Your Rights</h2>
+  <p>Under KVKK Article 11 and the GDPR, you have the right to:</p>
+  <ul>
+    <li>Learn whether your data is processed and request information about it</li>
+    <li>Access your data, and request its correction or deletion</li>
+    <li>Object to or restrict processing</li>
+    <li>Request data portability</li>
+    <li>Withdraw your consent at any time</li>
+    <li>Lodge a complaint with the Turkish Personal Data Protection Authority or the data protection authority in your country</li>
+  </ul>
+  <p>California residents (CCPA/CPRA) may request that their personal information not be “sold” or “shared”.
+  To exercise your rights, email <a href="mailto:necrosgamesdev@gmail.com">necrosgamesdev@gmail.com</a>;
+  we will respond within 30 days. To reset your advertising ID or turn off personalized ads on your device:</p>
+  <ul>
+    <li><strong>Android:</strong> Settings → Google → Ads → “Delete advertising ID”</li>
+    <li><strong>iOS:</strong> Settings → Privacy &amp; Security → Tracking → turn off permission for the app</li>
+  </ul>
+
+  <h2>11. Changes</h2>
+  <p>We may update this policy from time to time. The current version is always published on this page and
+  the date at the top is updated. For significant changes we may also notify you inside the Game.</p>
+
+  <h2>12. Contact</h2>
+  <p class="note"><strong>Necros Games</strong><br>
+  Email: <a href="mailto:necrosgamesdev@gmail.com">necrosgamesdev@gmail.com</a><br>
+  Web: <a href="https://necrosgames.com">necrosgames.com</a></p>
+</article>
+
+</main>
+
+<footer>© 2026 Necros Games</footer>
+
+<script>
+  // Dil seçimi: ?lang=tr|en > kayıtlı tercih > tarayıcı dili (Türkçe değilse İngilizce)
+  (function () {
+    var TITLES = { tr: "Gizlilik Politikası — Necros Games", en: "Privacy Policy — Necros Games" };
+    var buttons = document.querySelectorAll("[data-set-lang]");
+
+    function apply(lang) {
+      document.documentElement.lang = lang;
+      document.title = TITLES[lang];
+      buttons.forEach(function (b) {
+        b.setAttribute("aria-pressed", b.getAttribute("data-set-lang") === lang ? "true" : "false");
+      });
+    }
+
+    function pick() {
+      var q = new URLSearchParams(location.search).get("lang");
+      if (q === "tr" || q === "en") return q;
+      try {
+        var saved = localStorage.getItem("necros-lang");
+        if (saved === "tr" || saved === "en") return saved;
+      } catch (e) {}
+      return (navigator.language || "").toLowerCase().indexOf("tr") === 0 ? "tr" : "en";
+    }
+
+    buttons.forEach(function (b) {
+      b.addEventListener("click", function () {
+        var lang = b.getAttribute("data-set-lang");
+        try { localStorage.setItem("necros-lang", lang); } catch (e) {}
+        apply(lang);
+        window.scrollTo(0, 0);
+      });
+    });
+
+    apply(pick());
+  })();
+</script>
+
+</body>
+</html>
