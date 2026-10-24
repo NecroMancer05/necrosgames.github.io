@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paw Smash! - Physics Puzzle</title>
+<meta name="description" content="Knock down the towers with your cannon - a physics puzzle game. Download Paw Smash! for Android and iPhone.">
+<!-- The invite link the game shares (Davet Et, docs/friends.md in the game repo): phones go straight to
+     their store, a computer sees both. Play's referrer carries utm_source=friends for the acquisition report. -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Paw Smash! - Physics Puzzle">
+<meta property="og:description" content="Knock down the towers with your cannon. Come play with me!">
+<meta property="og:image" content="https://necrosgames.com/assets/paw-og.jpg">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta property="og:url" content="https://necrosgames.com/paw/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+<style>
+  :root { --plum: #592D60; --bg-top: #faf8fb; --bg-bottom: #f1ecf4; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { min-height: 100%; }
+  body {
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.6rem;
+    background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    padding: 2rem 1.2rem; text-align: center; color: var(--plum);
+  }
+  .art { width: min(640px, 92vw); border-radius: 18px; box-shadow: 0 10px 30px rgba(89, 45, 96, 0.25); }
+  h1 { font-size: 1.6rem; }
+  .stores { display: flex; flex-wrap: wrap; gap: 0.9rem; justify-content: center; }
+  .store {
+    display: inline-block; min-width: 13rem; padding: 0.9rem 1.6rem; border-radius: 999px;
+    background: var(--plum); color: #fff; text-decoration: none; font-size: 1.05rem; font-weight: 600;
+    box-shadow: 0 6px 20px rgba(89, 45, 96, 0.25);
+  }
+  .store:hover { background: #6b3a73; }
+  .small { font-size: 0.9rem; opacity: 0.75; }
+  .small a { color: var(--plum); }
+</style>
+</head>
+<body>
+  <img class="art" src="../assets/paw-og.jpg" alt="Paw Smash!">
+  <h1>Paw Smash! - Physics Puzzle</h1>
+  <div class="stores">
+    <a class="store" id="play" href="https://play.google.com/store/apps/details?id=com.necrosgames.pawsmash&amp;referrer=utm_source%3Dfriends%26utm_medium%3Dinvite">Google Play</a>
+    <a class="store" id="appstore" href="https://apps.apple.com/app/id6814009444">App Store</a>
+  </div>
+  <p class="small"><a href="../privacy.html">Privacy Policy</a> · <a href="../terms.html">Terms of Use</a></p>
+  <script>
+    // A phone goes straight to its own store; a computer (or an unknown device) stays on this page.
+    (function () {
+      var ua = navigator.userAgent || "";
+      var iPadOS = navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1;
+      if (/android/i.test(ua)) location.replace(document.getElementById("play").href);
+      else if (/iPhone|iPad|iPod/i.test(ua) || iPadOS) location.replace(document.getElementById("appstore").href);
+    })();
+  </script>
+</body>
+</html>
